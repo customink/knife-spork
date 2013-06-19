@@ -137,7 +137,7 @@ module KnifeSpork
       environments_path = spork_config[:environment_path] || cookbook_path.gsub('cookbooks', 'environments')
       environment_path = File.expand_path( File.join(environments_path, "#{environment}.json") )
 
-      File.open(environment_path, 'w'){ |f| f.puts(json.pretty_generate) }
+      File.open(environment_path, 'w'){ |f| f.puts(json) }
     end
 
     def promote(environment, cookbook_names)
