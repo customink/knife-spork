@@ -1,5 +1,5 @@
 require 'app_conf'
-require 'json'
+require 'json/pure'
 
 require 'chef/cookbook_loader'
 require 'chef/knife/core/object_loader'
